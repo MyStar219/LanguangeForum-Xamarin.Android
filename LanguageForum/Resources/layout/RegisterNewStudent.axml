@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:minWidth="300dp"
+    android:minHeight="470dp">
+    <TextView
+        android:text="@string/app_name"
+        android:background="@android:color/background_light"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#368DEB"
+        android:id="@+id/txtCaption"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawableLeft="@drawable/Icon" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginTop="0.5dp"
+        android:background="#E6E6E6" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:layout_weight="50"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView1"
+                    android:adjustViewBounds="true" />
+                <LinearLayout
+                    android:layout_weight="50"
+                    android:weightSum="100"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:text="Select photo"
+                        android:background="@drawable/ButtonLessonType"
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:id="@+id/btnSelectPhoto" />
+                    <Button
+                        android:text="Take photo"
+                        android:background="@drawable/ButtonLessonType"
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="13sp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:id="@+id/btnTakePhoto" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dip"
+                android:layout_marginTop="0.5dp"
+                android:background="#E6E6E6" />
+            <TextView
+                android:id="@+id/lblFirstName"
+                android:text="First name"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp" />
+            <EditText
+                android:id="@+id/txtFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/lblLastName"
+                android:text="Last name"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="0.0dp" />
+            <EditText
+                android:id="@+id/txtLastName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/lblStreet"
+                android:text="Street"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <EditText
+                android:id="@+id/txtStreet"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/lblCity"
+                android:text="City"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <EditText
+                android:id="@+id/txtCity"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/lblZipCode"
+                android:text="Zip code"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <EditText
+                android:id="@+id/txtZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:inputType="number"
+                android:maxLength="5" />
+            <TextView
+                android:id="@+id/lblPhone"
+                android:text="Telephone"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <EditText
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/lblEmail"
+                android:text="E-mail"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/txtEmail"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/lblTIN"
+                android:text="TIN (not required)"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <EditText
+                android:id="@+id/txtICO"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/lblBirthDate"
+                android:text="Birth date (not required)"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <EditText
+                android:id="@+id/txtBirthDate"
+                android:background="@drawable/edit_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:editable="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <TextView
+                android:id="@+id/lblLanguage"
+                android:text="Language"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <Spinner
+                android:layout_height="35dp"
+                android:spinnerMode="dialog"
+                android:background="@drawable/edit_text_style"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/spLanguage" />
+            <TextView
+                android:id="@+id/lblDesiredLanguage"
+                android:text="Learning language"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+            <Spinner
+                android:layout_height="35dp"
+                android:spinnerMode="dialog"
+                android:background="@drawable/edit_text_style"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/spDesiredLanguage" />
+            <Button
+                android:text="Register new student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnRegisterNewStudent"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingBottom="5dp"
+                android:height="50dp"
+                android:paddingTop="2dp"
+                android:background="@drawable/ButtonRegisterStudent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

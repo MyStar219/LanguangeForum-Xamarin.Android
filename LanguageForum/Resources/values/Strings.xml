@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Language Forum</string>
+  <string name="startLesson60Minutes">Start 60 min lesson</string>
+  <string name="startLesson90Minutes">Start 90 min lesson</string>
+  <string-array name="languages">
+    <item>CZ</item>
+    <item>EN</item>
+    <item>DE</item>
+    <item>FR</item>
+    <item>IT</item>
+    <item>RU</item>
+    <item>JA</item>
+    <item>ES</item>
+  </string-array>
+</resources>

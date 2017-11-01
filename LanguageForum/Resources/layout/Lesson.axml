@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#368DEB"
+        android:id="@+id/txtCaption"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:drawableLeft="@drawable/Icon" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="0.5dp"
+        android:background="#E6E6E6" />
+    <TextView
+        android:text="Lesson type"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/txtLessonType"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#368DEB"
+        android:paddingLeft="20dp" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="0.5dp"
+        android:layout_marginTop="0dp"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        android:id="@+id/progressBarBottom" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minHeight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Teacher"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:id="@+id/txtTeacherName"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp" />
+        <TextView
+            android:text="Students"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:id="@+id/txtStudentsCaption"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp" />
+        <ListView
+            android:id="@+id/studentsList"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/lblDescription"
+            android:text="Lesson description"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="0.0dp" />
+        <EditText
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="#000" />
+        <Button
+            android:text="Canceled lesson"
+            android:background="@drawable/ButtonLessonType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:id="@+id/btnCancelLesson"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp" />
+        <Button
+            android:text="Scan codes"
+            android:background="@drawable/ButtonLessonType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:id="@+id/btnScanCode"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+</LinearLayout>

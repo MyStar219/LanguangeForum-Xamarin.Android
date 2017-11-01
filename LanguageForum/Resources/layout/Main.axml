@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="@string/app_name"
+        android:background="@android:color/background_light"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#368DEB"
+        android:id="@+id/txtCaption"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawableLeft="@drawable/Icon" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginTop="0.5dp"
+        android:background="#E6E6E6" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/space1" />
+            <Button
+                android:text="@string/startLesson60Minutes"
+                android:background="@drawable/ButtonLessonType"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:id="@+id/btnStartLesson60Minutes" />
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/space2" />
+            <Button
+                android:text="@string/startLesson90Minutes"
+                android:background="@drawable/ButtonLessonType"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:id="@+id/btnStartLesson90Minutes" />
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/space2" />
+            <Button
+                android:text="Register new student"
+                android:layout_width="match_parent"
+                android:id="@+id/btnRegisterNewStudent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:background="@drawable/ButtonRegisterStudent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

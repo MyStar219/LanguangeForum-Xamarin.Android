@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{9940B07C-967A-49F1-80D8-2557D06DF579}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LanguageForum/Web References/AndroidService/Reference.cs">
+    <Files>
+      <File FileName="LanguageForum/LessonActivity.cs" Line="68" Column="13" />
+      <File FileName="LanguageForum/StudentsListViewAdapter.cs" Line="1" Column="1" />
+      <File FileName="LanguageForum/BackgroundIntentService.cs" Line="91" Column="52" />
+      <File FileName="LanguageForum/Web References/AndroidService/Reference.map" Line="7" Column="30" />
+      <File FileName="LanguageForum/Web References/AndroidService/Reference.cs" Line="194" Column="35" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.LanguageForum PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
